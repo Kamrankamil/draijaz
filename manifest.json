@@ -1,0 +1,95 @@
+{
+  "name": "Dr. Aijaz Ahmed - General Physician & Specialist",
+  "short_name": "Dr. Aijaz Ahmed",
+  "description": "General Physician specializing in Diabetes, Blood Pressure & Kidney Related Problems",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/images/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["health", "medical"],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "assets/images/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Appointment",
+      "short_name": "Appointment",
+      "description": "Book an appointment with Dr. Aijaz Ahmed",
+      "url": "/#appointment-section",
+      "icons": [
+        {
+          "src": "assets/images/icon-appointment.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Call Doctor",
+      "short_name": "Call",
+      "description": "Call Dr. Aijaz Ahmed",
+      "url": "tel:03452917076",
+      "icons": [
+        {
+          "src": "assets/images/icon-call.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact Form",
+      "short_name": "Contact",
+      "description": "Send a message to Dr. Aijaz Ahmed",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/images/icon-contact.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}

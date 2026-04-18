@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Dr. Aijaz Ahmed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .offline-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .offline-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: white;
+            color: #2563eb;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .info-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="offline-icon">
+            📡
+        </div>
+        
+        <h1>You're Offline</h1>
+        
+        <p>It looks like you've lost your internet connection. Don't worry - you can still use some features when you go back online.</p>
+
+        <div class="offline-actions">
+            <button onclick="tryReload()">Try Again</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+
+        <div class="info-box">
+            <h3>While You're Offline:</h3>
+            <ul>
+                <li>Previously viewed pages are cached</li>
+                <li>Some features may be limited</li>
+                <li>Appointment requests will sync when online</li>
+                <li>Your cached data is safely stored</li>
+            </ul>
+        </div>
+
+        <div class="footer-text">
+            <p>Dr. Aijaz Ahmed | General Physician & Specialist</p>
+            <p>We'll be ready when you are.</p>
+        </div>
+    </div>
+
+    <script>
+        function tryReload() {
+            window.location.reload();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+
+        // Try to reconnect automatically
+        window.addEventListener('online', () => {
+            console.log('Connection restored');
+            window.location.href = '/';
+        });
+
+        // Check connection status periodically
+        setInterval(() => {
+            fetch('/index.html', { method: 'HEAD' })
+                .then(() => {
+                    // Connection is back
+                    if (navigator.onLine) {
+                        window.location.href = '/';
+                    }
+                })
+                .catch(() => {
+                    // Still offline
+                });
+        }, 5000);
+    </script>
+</body>
+</html>

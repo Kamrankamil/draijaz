@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Aijaz Ahmed - General Physician specializing in Diabetes, Blood Pressure & Kidney Related Problems">
+    <meta name="keywords" content="Doctor, General Physician, Diabetes, Blood Pressure, Kidney Specialist, Karachi">
+    <title>Dr. Aijaz Ahmed - General Physician & Specialist | Karachi</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Dr. Aijaz Ahmed</h1>
+                    <p class="logo-subtitle">General Physician & Specialist</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#specialties" class="nav-link">Specialties</a></li>
+                    <li><a href="#clinics" class="nav-link">Clinics</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to Dr. Aijaz Ahmed's Clinic</h1>
+                    <p>Compassionate Care for Diabetes, Blood Pressure & Kidney Related Problems</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToAppointment()">Book Appointment</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>226</h3>
+                        <p>Patient Reviews</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>4.9/5</h3>
+                        <p>Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Dr. Aijaz Ahmed</h2>
+                <p>Medical Excellence & Patient Care</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Professional Background</h3>
+                    <p>Dr. Aijaz Ahmed is a highly qualified General Physician with over 10 years of medical experience. He specializes in the management and treatment of chronic diseases including Diabetes, Blood Pressure disorders, and Kidney-related conditions.</p>
+                    
+                    <h3>Qualifications</h3>
+                    <ul class="qualifications-list">
+                        <li><i class="fas fa-check-circle"></i> MBBS (Bachelor of Medicine, Bachelor of Surgery)</li>
+                        <li><i class="fas fa-check-circle"></i> Senior Registrar</li>
+                        <li><i class="fas fa-check-circle"></i> PMDC Verified Professional</li>
+                    </ul>
+
+                    <h3>Our Approach</h3>
+                    <p>Dr. Aijaz believes in providing comprehensive, patient-centered care with a focus on prevention and long-term wellness. He takes time to understand each patient's unique health needs and develops personalized treatment plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="specialties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Areas of Specialization</h2>
+                <p>Expert Care in Multiple Medical Fields</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Diabetes Management</h3>
+                    <p>Comprehensive management of Type 1 and Type 2 diabetes, including lifestyle counseling, medication management, and complications prevention.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Blood Pressure Control</h3>
+                    <p>Treatment and management of hypertension with advanced monitoring techniques and personalized medication plans.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Kidney Disease</h3>
+                    <p>Specialized care for kidney-related conditions including CKD management, prevention, and treatment.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>General Medicine</h3>
+                    <p>Comprehensive primary care, diagnosis, and treatment of various medical conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Convenient Healthcare Options</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Consultation</h3>
+                    <p>Online consultations from the comfort of your home. Available at Rs. 1,000 per session.</p>
+                    <p class="availability">Available: 09:00 AM - 11:00 AM</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Clinic Visit</h3>
+                    <p>In-person consultations at our well-equipped clinics with minimal waiting time.</p>
+                    <p class="availability">Check clinic hours below</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-prescription-bottle"></i>
+                    <h3>Prescriptions</h3>
+                    <p>Accurate prescription writing with clear instructions and follow-up guidance.</p>
+                    <p class="availability">During consultations</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Diagnosis</h3>
+                    <p>Advanced diagnostic assessment and health screening services.</p>
+                    <p class="availability">Available at all clinics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinics Section -->
+    <section id="clinics" class="clinics">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Clinics</h2>
+                <p>Visit Us at Your Convenient Location</p>
+            </div>
+            <div class="clinics-grid">
+                <div class="clinic-card">
+                    <div class="clinic-header">
+                        <i class="fas fa-hospital"></i>
+                        <h3>Darul Sehat Hospital</h3>
+                    </div>
+                    <div class="clinic-details">
+                        <p><strong>Address:</strong> Street No. 19, Block-15, Gulistan-e-Johar, Karachi</p>
+                        <p><strong>Timing:</strong> Monday to Saturday</p>
+                        <p><strong>Hours:</strong> 09:30 AM - 10:15 PM</p>
+                        <p><strong>Phone:</strong> <a href="tel:03452917076">0345-2917076</a></p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Darul+Sehat+Hospital+Karachi" target="_blank" class="btn btn-small">Get Directions</a>
+                </div>
+
+                <div class="clinic-card">
+                    <div class="clinic-header">
+                        <i class="fas fa-flask"></i>
+                        <h3>Chughtai Lab & Clinic</h3>
+                    </div>
+                    <div class="clinic-details">
+                        <p><strong>Address:</strong> Opposite Darul Sehat Hospital, Near Delicacy Bakery, Block-13, Gulistan-e-Johar, Karachi</p>
+                        <p><strong>Timing:</strong> Monday to Sunday</p>
+                        <p><strong>Hours:</strong> 08:00 AM - 09:30 AM</p>
+                        <p><strong>Phone:</strong> <a href="tel:03452917076">0345-2917076</a></p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Chughtai+Lab+Clinic+Karachi" target="_blank" class="btn btn-small">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book an Appointment</h2>
+                <p>Get Confirmed Appointment Online</p>
+            </div>
+            <div class="appointment-content">
+                <div class="appointment-form">
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="clinic">Select Clinic *</label>
+                            <select id="clinic" name="clinic" required>
+                                <option value="">Choose a clinic</option>
+                                <option value="darul-sehat">Darul Sehat Hospital</option>
+                                <option value="chughtai">Chughtai Lab & Clinic</option>
+                                <option value="video">Video Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Medical History / Symptoms</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    </form>
+                </div>
+                <div class="appointment-info">
+                    <h3>How to Book</h3>
+                    <ol>
+                        <li>Fill in your details</li>
+                        <li>Select your preferred clinic</li>
+                        <li>Choose a convenient date</li>
+                        <li>We'll confirm your appointment</li>
+                    </ol>
+                    <p class="info-note">You will receive a confirmation call on the number provided.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Patient Reviews</h2>
+                <p>What Our Patients Say About Us</p>
+            </div>
+            <div class="reviews-header">
+                <div class="rating-summary">
+                    <div class="rating-number">4.9</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Based on 226 Reviews</p>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>F.A</h4>
+                            <span class="review-date">18/03/2026</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"I am satisfied with the doctor. Good, No Waiting Time, Great Experience. 10 min meetup. Video Consultation"</p>
+                    <span class="review-badge">Verified Review</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>F.A</h4>
+                            <span class="review-date">17/03/2026</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"I am satisfied with the doctor. No Waiting Time, Great Experience. 5 min meetup. Video Consultation"</p>
+                    <span class="review-badge">Verified Review</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>A.Z</h4>
+                            <span class="review-date">03/02/2026</span>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"I am satisfied with the doctor. Less Than 10 mins wait time, Great Experience, Good PA/Staff, Good Clinic. 20 min meetup at Chughtai Lab & Clinic"</p>
+                    <span class="review-badge">Verified Review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We're Here to Help</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:03452917076">0345-2917076</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Locations</h4>
+                            <p>Darul Sehat Hospital & Chughtai Lab<br>Gulistan-e-Johar, Karachi</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Darul Sehat: Mon-Sat, 09:30 AM - 10:15 PM<br>Chughtai Lab: Mon-Sun, 08:00 AM - 09:30 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dr. Aijaz Ahmed</h4>
+                    <p>General Physician & Specialist in Diabetes, Blood Pressure & Kidney Related Problems</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#specialties">Specialties</a></li>
+                        <li><a href="#clinics">Clinics</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" onclick="alert('Follow on WhatsApp'); return false;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" onclick="alert('Follow on Facebook'); return false;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" onclick="alert('Follow on Instagram'); return false;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Aijaz Ahmed. All rights reserved. | PMDC Verified Professional</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

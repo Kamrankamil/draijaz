@@ -1,0 +1,16 @@
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+Allow: *.html
+Allow: *.css
+Allow: *.js
+
+# Disallow sensitive directories
+Disisallow: /admin/
+Disallow: /private/
+
+# Crawl delay (optional - adjust based on server capacity)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://draijazeahmed.com/sitemap.xml
